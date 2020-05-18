@@ -1,0 +1,10 @@
+let spisok = document.createElement('ul');
+	document.body.append(spisok);
+	let cookie = document.cookie.split(';');
+	for (let i = 0; i<cookie.length; i++) { 
+		let li = document.createElement('li'); 
+		li.textContent = cookie[i]; spisok.append(li); 
+	}
+
+На своей html страничке увидеть куки не получится, так как для этого необходим домен. Поэтому скрипт выше необходимо проверять
+на сторонних сайтах путём введения его в консоль.
